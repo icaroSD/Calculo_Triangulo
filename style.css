@@ -1,9 +1,13 @@
+body{
+    height:100vh ;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+   
 
 }
 
@@ -16,7 +20,7 @@ form{
 input[type=number]{
     margin-bottom: 10px;
     height: 30px;
-    font-size: 20px;
+    font-size: 1.5rem;
     border:none;
     border-radius: 5px;
     padding-left: 10px;
@@ -29,18 +33,19 @@ input[type=number]{
     border: none;
     background-color: rgb(22, 47, 189);
     color: white;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 label{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 body{
     background-image: url(pexels-pavel-danilyuk-7403806.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
     margin: 0 100px;
@@ -54,11 +59,32 @@ body{
     width: 300px;
     border-radius: 10px;
     height: 70px;
-    margin-top: 150px;
     align-items: center;
     display: flex;
     justify-content: center;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.5rem;
+    text-align: center;
 
+}
+
+
+
+/*media queries*/
+
+@media (max-width:1000px) {
+    body{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box{
+        margin-top: 50px;
+    }
+
+    .container{
+        background-color: rgba(255, 255, 255, 0.452);
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+    }
 }
